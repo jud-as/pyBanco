@@ -7,5 +7,4 @@ class Cliente:
 
 
     def dados_cliente(self):
-
-        pass
+        return f'{self.nome} {self.sobrenome} {self.cpf}'
