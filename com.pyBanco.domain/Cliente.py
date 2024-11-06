@@ -5,3 +5,7 @@ class Cliente:
         self.sobrenome = sobrenome
         self.cpf = cpf
 
+
+    def dados_cliente(self):
+
+        pass

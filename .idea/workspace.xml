@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daa634dd-b524-43c3-b385-6151cf9037db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/com.pyBanco.service/ServiceContaBancaria.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.pyBanco.domain/Cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.pyBanco.domain/Cliente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.pyBanco.domain/ContaBancaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.pyBanco.domain/ContaBancaria.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.pyBanco.domain/ContaCorrente.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.pyBanco.domain/ContaCorrente.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.pyBanco.domain/ContaPoupanca.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.pyBanco.domain/ContaPoupanca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.pyBanco.domain/Historico.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.pyBanco.domain/Historico.py" afterDir="false" />
@@ -69,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730898835724</updated>
       <workItem from="1730898837127" duration="368000" />
-      <workItem from="1730899219458" duration="2445000" />
+      <workItem from="1730899219458" duration="3059000" />
     </task>
     <servers />
   </component>
