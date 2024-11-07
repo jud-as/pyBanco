@@ -13,5 +13,4 @@ class Cliente:
         self.contas.append(conta)
 
     def listar_contas(self):
-        for conta in self.contas:
-            print(conta)
+        return "\n".join([str(conta) for conta in self.contas])

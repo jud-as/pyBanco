@@ -1,18 +1,25 @@
 class ContaBancaria:
-    idConta = 0
+    _next_id_conta = 1
 
     def __init__(self, numero_agencia, tipo_conta, saldo, limite):
         self.numero_agencia = numero_agencia
         self.tipo_conta = tipo_conta
         self.saldo = saldo
         self.limite = limite
-        self.idConta += 1
+        self.titular = ""
+        self.id_conta = ContaBancaria._next_id_conta
+        ContaBancaria._next_id_conta += 1
+        self.transacoes = []
+        self.status = "aberta"
 
     def consultar_saldo(self):
-        pass
+        return self.saldo
 
     def sacar(self, valor):
-        pass
+        if valor <= self.saldo:
+            self.saldo -= valor
+        else:
+            print('Saldo insuficiente.')
 
     def depositar(self, valor):
         if valor > 0:
@@ -21,14 +28,32 @@ class ContaBancaria:
             print("\nOperação impossível.")
 
     def transfere_para(self, destino, valor):
-        pass
+
+        # Verifica possibilidade de transferencia
+        if not isinstance(destino, ContaBancaria):
+            print("Conta de destino não válida.")
+            return False
+        else:
+            if valor > self.saldo:
+                print("Saldo insuficiente.")
+                return False
+
+        # Realiza transferência
+        self.saldo -= valor
+        destino.depositar(valor)
 
     def obter_extrato(self):
         pass
 
     def alterar_titular(self, novo_titular):
-        pass
+        self.titular = novo_titular
 
     def fechar_conta(self):
-        pass
+        if self.status == "fechada":
+            print("\nConta já fechada.")
+            return
 
+        saldo_final = self.saldo
+        self.sacar(saldo_final)
+        self.status = "fechada"
+        print(f"\nConta {self.id_conta} fechada. Valor de R${saldo_final:.2f} transferido para o titular {self.titular}.")
