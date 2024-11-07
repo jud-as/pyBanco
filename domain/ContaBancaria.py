@@ -1,3 +1,6 @@
+from domain.Historico import Historico
+
+
 class ContaBancaria:
     _next_id_conta = 1
 
@@ -9,8 +12,11 @@ class ContaBancaria:
         self.titular = ""
         self.id_conta = ContaBancaria._next_id_conta
         ContaBancaria._next_id_conta += 1
-        self.transacoes = []
         self.status = "aberta"
+        self.historico = Historico()
+
+        # Registro de abertura de conta no histórico
+        self.historico.adicionar_transacao("Abertura de conta", saldo, saldo)
 
     def consultar_saldo(self):
         return self.saldo

@@ -2,6 +2,7 @@ from domain.Cliente import Cliente
 from domain.ContaBancaria import ContaBancaria
 from domain.ContaPoupanca import ContaPoupanca
 from domain.ContaCorrente import ContaCorrente
+
 def main():
 
     # Exemplo de uso
