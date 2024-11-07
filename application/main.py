@@ -41,12 +41,13 @@ def main():
     # Operação de fechamento da conta
     conta_temporaria.fechar_conta()
 
-
     # Verificando a associação
     for cliente in lista_clientes:
         print(cliente.listar_contas())
 
-
+    # Imprimindo histórico de operações de conta
+    conta1.obter_extrato()
+    conta2.obter_extrato()
 
 if __name__ == "__main__":
     main()

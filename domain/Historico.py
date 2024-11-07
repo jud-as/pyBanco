@@ -13,6 +13,7 @@ class Historico:
         }
         self.transacoes.append(transacao)
     def imprime(self):
+        print("-"*40)
         print("\nHistórico de Transações:")
         print(f"Data da abertura: {self.data_da_abertura.strftime("%d/%m/%Y %H:%M:%S")}")
         for transacao in self.transacoes:
@@ -24,3 +25,4 @@ class Historico:
                   f"\n{tipo}"
                   f"\nValor: R${valor:.2f}"
                   f"\nSaldo final: R${saldo_final:.2f}")
+        print("-"*40)
