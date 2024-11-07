@@ -41,6 +41,9 @@ def main():
     # Operação de fechamento da conta
     conta_temporaria.fechar_conta()
 
+    # Calculando e aplicando juros mensais na conta poupança
+    conta2.calcular_juros_mensal()
+
     # Verificando a associação
     for cliente in lista_clientes:
         print(cliente.listar_contas())

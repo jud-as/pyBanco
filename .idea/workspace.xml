@@ -7,8 +7,7 @@
     <list default="true" id="daa634dd-b524-43c3-b385-6151cf9037db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/ContaBancaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/ContaBancaria.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/Historico.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/Historico.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/ContaPoupanca.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/ContaPoupanca.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "conta-bancaria",
+    "git-widget-placeholder": "feature/calculo-juros",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
