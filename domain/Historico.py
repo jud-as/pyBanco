@@ -1,4 +1,6 @@
 from datetime import datetime
+
+
 class Historico:
     def __init__(self):
         self.data_da_abertura = datetime.now()
@@ -13,6 +15,7 @@ class Historico:
             "saldo_final": saldo_final
         }
         self.transacoes.append(transacao)
+
     def imprime(self):
         print("-"*40)
         print(f"\nID conta: {self.id_conta}")
