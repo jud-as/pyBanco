@@ -3,6 +3,7 @@ class Historico:
     def __init__(self):
         self.data_da_abertura = datetime.now()
         self.transacoes = []
+        self.id_conta = 0
 
     def adicionar_transacao(self, tipo, valor, saldo_final):
         transacao = {
@@ -14,8 +15,9 @@ class Historico:
         self.transacoes.append(transacao)
     def imprime(self):
         print("-"*40)
+        print(f"\nID conta: {self.id_conta}")
+        print(f"\nData da abertura: {self.data_da_abertura.strftime("%d/%m/%Y %H:%M:%S")}")
         print("\nHistórico de Transações:")
-        print(f"Data da abertura: {self.data_da_abertura.strftime("%d/%m/%Y %H:%M:%S")}")
         for transacao in self.transacoes:
             data = transacao["data"].strftime("%d/%m/%Y %H:%M:%S")
             tipo = transacao["tipo"]

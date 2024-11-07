@@ -16,6 +16,7 @@ class ContaBancaria:
         self.historico = Historico()
 
         # Registro de abertura de conta no histórico
+        self.historico.id_conta = self.id_conta
         self.historico.adicionar_transacao("Abertura de conta", saldo, saldo)
 
     def consultar_saldo(self):

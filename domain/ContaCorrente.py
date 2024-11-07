@@ -5,7 +5,21 @@ class ContaCorrente(ContaBancaria):
         self.cheque_especial = cheque_especial
 
     def utilizar_cheque_especial(self, valor):
-        pass
+        if valor <= 0:
+            return "O valor deve ser positivo"
+
+        if self.saldo >= valor:
+            self.saldo -= valor
+            self.historico.adicionar_transacao("Saque", valor, self.saldo)
+
+        elif self.saldo + self.limite >= valor:
+            credito_utilizado = valor - self.saldo
+            self.saldo = 0
+            self.limite -= credito_utilizado
+            self.historico.adicionar_transacao("Saque com cheque especial", valor, self.saldo)
+
+        else:
+            print("\nSaldo insuficiente, incluindo o limite de cheque especial")
 
     def __str__(self):
         return (f"\nID Conta: {self.id_conta}"

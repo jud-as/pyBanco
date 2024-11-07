@@ -44,6 +44,9 @@ def main():
     # Calculando e aplicando juros mensais na conta poupança
     conta2.calcular_juros_mensal()
 
+    # Utilizando cheque especial na conta corrente
+    conta1.utilizar_cheque_especial(650)
+
     # Verificando a associação
     for cliente in lista_clientes:
         print(cliente.listar_contas())
