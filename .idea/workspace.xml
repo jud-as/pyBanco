@@ -7,8 +7,9 @@
     <list default="true" id="daa634dd-b524-43c3-b385-6151cf9037db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/ContaBancaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/ContaBancaria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/Cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/Cliente.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/ContaCorrente.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/ContaCorrente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/ContaPoupanca.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/ContaPoupanca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/Historico.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/Historico.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/cheque-especial",
+    "git-widget-placeholder": "release/1.0.0",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,6 +89,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pyBanco$main.coverage" NAME="main Coverage Results" MODIFIED="1730955403699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/application" />
+    <SUITE FILE_PATH="coverage/pyBanco$main.coverage" NAME="main Coverage Results" MODIFIED="1730955749239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/application" />
   </component>
 </project>

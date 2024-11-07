@@ -1,10 +1,9 @@
 from domain.Cliente import Cliente
-from domain.ContaBancaria import ContaBancaria
 from domain.ContaPoupanca import ContaPoupanca
 from domain.ContaCorrente import ContaCorrente
 
-def main():
 
+def main():
     # Exemplo de uso
     cliente = Cliente("João", "Silva", 12345678900)
     cliente_auxiliar = Cliente("Maria", "Tereza", 98765432100)
@@ -54,6 +53,7 @@ def main():
     # Imprimindo histórico de operações de conta
     conta1.obter_extrato()
     conta2.obter_extrato()
+
 
 if __name__ == "__main__":
     main()
