@@ -15,7 +15,10 @@ class ContaBancaria:
         pass
 
     def depositar(self, valor):
-        pass
+        if valor > 0:
+            self.saldo += valor
+        else:
+            print("\nOperação impossível.")
 
     def transfere_para(self, destino, valor):
         pass
